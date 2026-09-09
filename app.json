@@ -6,7 +6,6 @@
     "orientation": "portrait",
     "scheme": "petcostume",
     "userInterfaceStyle": "automatic",
-    "newArchEnabled": true,
     "assetBundlePatterns": [
       "**/*"
     ],
@@ -36,7 +35,8 @@
           "photosPermission": "Pet Costume peut sauvegarder le resultat dans votre galerie.",
           "savePhotosPermission": "Pet Costume peut sauvegarder le resultat dans votre galerie."
         }
-      ]
+      ],
+      "expo-font"
     ],
     "experiments": {
       "typedRoutes": true

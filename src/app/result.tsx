@@ -1,4 +1,4 @@
-import * as MediaLibrary from "expo-media-library";
+import { Asset, requestPermissionsAsync } from "expo-media-library";
 import * as Sharing from "expo-sharing";
 import { router } from "expo-router";
 import { Alert, Image, ScrollView, StyleSheet, Text, View } from "react-native";
@@ -15,14 +15,14 @@ export default function ResultScreen() {
       return;
     }
 
-    const permission = await MediaLibrary.requestPermissionsAsync();
+    const permission = await requestPermissionsAsync();
 
     if (!permission.granted) {
       Alert.alert("Permission requise", "Autorisez l'acces a la galerie pour sauvegarder l'image.");
       return;
     }
 
-    await MediaLibrary.saveToLibraryAsync(result.imageUri);
+    await Asset.create(result.imageUri);
     Alert.alert("Image sauvegardee");
   }
 
