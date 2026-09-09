@@ -1,0 +1,45 @@
+{
+  "expo": {
+    "name": "Pet Costume",
+    "slug": "pet-costume",
+    "version": "0.1.0",
+    "orientation": "portrait",
+    "scheme": "petcostume",
+    "userInterfaceStyle": "automatic",
+    "newArchEnabled": true,
+    "assetBundlePatterns": [
+      "**/*"
+    ],
+    "ios": {
+      "supportsTablet": true
+    },
+    "android": {
+      "adaptiveIcon": {
+        "backgroundColor": "#F7F1E8"
+      },
+      "permissions": [
+        "READ_MEDIA_IMAGES",
+        "WRITE_EXTERNAL_STORAGE"
+      ]
+    },
+    "plugins": [
+      "expo-router",
+      [
+        "expo-image-picker",
+        {
+          "photosPermission": "Pet Costume utilise la galerie pour choisir la photo de votre animal."
+        }
+      ],
+      [
+        "expo-media-library",
+        {
+          "photosPermission": "Pet Costume peut sauvegarder le resultat dans votre galerie.",
+          "savePhotosPermission": "Pet Costume peut sauvegarder le resultat dans votre galerie."
+        }
+      ]
+    ],
+    "experiments": {
+      "typedRoutes": true
+    }
+  }
+}
