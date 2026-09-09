@@ -29,3 +29,15 @@ Raison: le brief prevoit des donnees simples pour la V1 avant connexion eventuel
 Decision: utiliser ESLint 8 et `.eslintrc.js`.
 
 Raison: `eslint-config-expo@8` expose une configuration classique, compatible avec ESLint 8.
+
+## Expo SDK 57
+
+Decision: mettre a jour le projet de SDK 52 vers SDK 57.
+
+Raison: Expo Go installe sur telephone physique utilise SDK 57 et refuse les projets SDK 52.
+
+## API MediaLibrary SDK 57
+
+Decision: utiliser `Asset.create` depuis `expo-media-library` pour sauvegarder l'image dans la galerie.
+
+Raison: `saveToLibraryAsync` importe depuis `expo-media-library` est deprecie et leve une erreur runtime en SDK 57.
