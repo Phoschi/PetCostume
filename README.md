@@ -1,6 +1,6 @@
 # Pet Costume
 
-Application mobile Expo permettant de transformer une photo d'animal avec un costume, puis d'ouvrir le produit associe via un lien d'affiliation.
+Application mobile permettant de transformer une photo d'animal avec un costume, puis d'ouvrir le produit associe via un lien d'affiliation.
 
 ## Stack
 
